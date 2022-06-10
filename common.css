@@ -1,0 +1,41 @@
+@charset "UTF-8";
+body, h1, h2, h3, ul, li, a, p{margin:0; padding:0;}
+li {list-style:none;}
+a {text-decoration:none;}
+address {font-style:normal;}
+#header {height: 42px;
+         border-bottom: 1px solid #000;
+         background:linear-gradient(180deg, #8e0000, #700000);}
+#header h1 {color: #fff; text-align:center;}
+#header a {position:absolute; top:4px; height:32px;
+           background: url(sprites.png) no-repeat;
+           text-indent: -9999px;}
+#header a.btn { width: 62px; left:4px;}
+#header a.toggle {width: 32px; right:4px; background-position-x:right;}
+#toggle {background:#808080; padding:20px;}
+#toggle ul {overflow: hidden; background:#fff;}
+#toggle ul li {width: 80px; height: 30px; float:left; line-height: 30px;
+               text-align: center;}
+#toggle ul li a {color:#333;}
+/* #gnb {} */
+#gnb ul { height: 35px; border-bottom:2px solid #000;
+          display:flex;}
+#gnb ul li {width: 25%; height: 35px;}
+#gnb ul li a {display:block; color:#fff;  background:#820e0e;
+              text-align: center; line-height:35px;}
+/* #lnb {} */
+#lnb ul { height: 35px; border-bottom:1px solid #000;
+          display:flex;}
+#lnb ul li {width:20%; height:35px;}
+#lnb ul li a {display:block; color:#000; background:#fff;
+              text-align: center; line-height:35px; position: relative;}
+#lnb ul li a::after {content:""; position: absolute; top: 10px; left:-1px;
+                    height: 15px; border-right: 1px solid #000;}
+#content {border-bottom: 3px solid #000; padding: 20px 10px 10px;}
+#content header {}
+#content header h2 {margin-left:3px; font-size: 30px;}
+#content header time {}
+#content p {padding-top: 20px;}
+#footer {text-align: center; padding: 20px 0;}
+#footer address {font-size: 24px; font-weight: bold;}
+#footer small {font-style:italic;}
